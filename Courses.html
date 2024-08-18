@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Courses.css">
+</head>
+<body>
+
+    <header class="header d-flex justify-content-between align-items-center">
+        <a href="https://wa.me/443003030266" class="phone">CALL +44 300 303 0266</a>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-dark"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com" target="_blank" class="text-dark"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <div class="header-buttons">
+            <a href="#notice">Notice</a>
+            <a href="#research">Research</a>
+            <a href="#scholarship">SCHOLARSHIP</a>
+            <a href="#" class="btn-popup" data-toggle="modal" data-target="#loginModal">Login</a>
+            <a href="#" class="btn-popup" data-toggle="modal" data-target="#registerModal">Register</a>
+        </div>
+    </header>
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="phone" class="form-control" id="loginPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="color: white;">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="registerPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="registerName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="color: white;">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="background-section d-flex justify-content-center align-items-start">
+        <div class="logo-background"></div> 
+        <img src="logo.png" alt="Logo" class="logo" id="logo">
+
+    </section>
+    <section class="info-section d-flex flex-column align-items-center">
+        <div class="info-text">
+            <div class="info-heading-button-wrapper">
+                <a href="Home.html" class="info-button">
+                    <span>Home</span><span class="button-symbol">&gt;</span>
+                    <span class="info-heading">Our Courses</span>
+                </a>
+            </div>
+            <p class="info-paragraph">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+        </div>
+    </section>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li class="active"><a href="Courses.html">COURSES</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li class="dropdown">
+                <a href="#" id="pagesDropdown">PAGES <span>&gt;</span></a>
+                <ul class="dropdown-menu" id="pagesMenu">
+                    <li><a href="#">Teacher</a></li>
+                    <li><a href="#">Teacher Single</a></li>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Notice Details</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Scholarship</a></li>
+                    <li><a href="#">Course Details</a></li>
+                    <li><a href="#">Event Details</a></li>
+                    <li><a href="#">Blog Details</a></li>
+                    <li class="sub-menu-item">
+                        <a href="#">Sub Menu <span>&gt;</span></a>
+                        <ul class="dropdown-menu sub-menu" id="subMenu">
+                            <li><a href="#">Sub Menu 01</a></li>
+                            <li><a href="#">Sub Menu 02</a></li>
+                            <li><a href="#">Sub Menu 03</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="container courses-section">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-1.jpg" alt="Photography Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>July 2024</span>
+                    </div>
+                    <h3><a href="photography.html">Photography</a></h3>
+                    <p>Explore the art of capturing moments and telling stories through photography.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-2.jpg" alt="Programming Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>August 2024</span>
+                    </div>
+                    <h3><a href="programming.html">Programming</a></h3>
+                    <p>Learn the fundamentals of coding and software development in various programming languages.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-3.jpg" alt="Lifestyle Archives Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>September 2024</span>
+                    </div>
+                    <h3><a href="lifestyle.html">Lifestyle Archives</a></h3>
+                    <p>Delve into the archives of lifestyle trends and their impact on society.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-4.jpg" alt="Complete Freelancing Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>October 2024</span>
+                    </div>
+                    <h3><a href="freelancing.html">Complete Freelancing</a></h3>
+                    <p>Master the skills needed to succeed in the freelancing, from find clients to manage projects.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-5.jpg" alt="Branding Design Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>November 2024</span>
+                    </div>
+                    <h3><a href="branding.html">Branding Design</a></h3>
+                    <p>Learn to create impactful branding and design that resonates with target audiences.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-6.jpg" alt="Art Design Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>December 2024</span>
+                    </div>
+                    <h3><a href="artdesign.html">Art Design</a></h3>
+                    <p>Explore various art design techniques and their applications in modern aesthetics.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-1.jpg" alt="Photography Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>July 2024</span>
+                    </div>
+                    <h3><a href="photography.html">Photography</a></h3>
+                    <p>Explore the art of capturing moments and telling stories through photography.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-2.jpg" alt="Programming Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>August 2024</span>
+                    </div>
+                    <h3><a href="programming.html">Programming</a></h3>
+                    <p>Learn the fundamentals of coding and software development in various programming languages.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-3.jpg" alt="Lifestyle Archives Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>September 2024</span>
+                    </div>
+                    <h3><a href="lifestyle.html">Lifestyle Archives</a></h3>
+                    <p>Delve into the archives of lifestyle trends and their impact on society.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-4.jpg" alt="Complete Freelancing Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>October 2024</span>
+                    </div>
+                    <h3><a href="freelancing.html">Complete Freelancing</a></h3>
+                    <p>Master the skills needed to succeed in the freelancing, from find clients to manage projects.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-5.jpg" alt="Branding Design Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>November 2024</span>
+                    </div>
+                    <h3><a href="branding.html">Branding Design</a></h3>
+                    <p>Learn to create impactful branding and design that resonates with target audiences.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-6.jpg" alt="Art Design Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>December 2024</span>
+                    </div>
+                    <h3><a href="artdesign.html">Art Design</a></h3>
+                    <p>Explore various art design techniques and their applications in modern aesthetics.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col-md-3">
+                    <img src="logo.png" alt="Website Logo" class="logo">
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-3 contact-info">
+                    <h5>Contact Info</h5>
+                    <p>1234 Street Name<br>City, State, 56789<br>Email: info@example.com<br>Phone: (123) 456-7890</p>
+                </div>
+                <!-- Subscribe -->
+                <div class="col-md-3">
+                    <h5>Subscribe</h5>
+                    <div class="subscribe-form d-flex">
+                        <input type="email" placeholder="Your Email">
+                        <button type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Your Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('scroll', function() {
+            var logoBackground = document.querySelector('.logo-background');
+            var scrollPosition = window.scrollY || window.pageYOffset;
+
+            if (scrollPosition > 100) {
+                logoBackground.classList.add('show');
+            } else {
+                logoBackground.classList.remove('show');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var pagesDropdown = document.getElementById('pagesDropdown');
+            var pagesMenu = document.getElementById('pagesMenu');
+            var subMenu = document.getElementById('subMenu');
+            
+            pagesDropdown.addEventListener('mouseover', function() {
+                pagesMenu.classList.add('show');
+            });
+
+            pagesDropdown.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!pagesMenu.contains(relatedTarget) && relatedTarget !== pagesDropdown) {
+                    pagesMenu.classList.remove('show');
+                }
+            });
+
+            pagesMenu.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!pagesDropdown.contains(relatedTarget) && !pagesMenu.contains(relatedTarget)) {
+                    pagesMenu.classList.remove('show');
+                }
+            });
+
+            var subMenuItem = document.querySelector('.sub-menu-item');
+            subMenuItem.addEventListener('mouseover', function() {
+                subMenu.classList.add('show');
+            });
+
+            subMenuItem.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!subMenu.contains(relatedTarget) && relatedTarget !== subMenuItem) {
+                    subMenu.classList.remove('show');
+                }
+            });
+
+            subMenu.addEventListener('mouseover', function() {
+                subMenu.classList.add('show');
+            });
+
+            subMenu.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!subMenuItem.contains(relatedTarget) && !subMenu.contains(relatedTarget)) {
+                    subMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

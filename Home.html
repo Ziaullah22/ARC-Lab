@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura:wght@700&display=swap">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home2.css">
+</head>
+<body>
+
+    <header class="header d-flex justify-content-between align-items-center">
+        <a href="https://wa.me/443003030266" class="phone">CALL +44 300 303 0266</a>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-dark"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com" target="_blank" class="text-dark"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <div class="header-buttons">
+            <a href="#notice">Notice</a>
+            <a href="#research">Research</a>
+            <a href="#scholarship">SCHOLARSHIP</a>
+            <a href="#" class="btn-popup" data-toggle="modal" data-target="#loginModal">Login</a>
+            <a href="#" class="btn-popup" data-toggle="modal" data-target="#registerModal">Register</a>
+        </div>
+    </header>
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="phone" class="form-control" id="loginPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="color: white;">Login</button>
+                    </form>
+                </div>
+            </div>
+            <br><br>
+                    <div class="row">
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="event-1.jpg" alt="Photography Event">
+                    <div class="event-date">
+                        <div class="day">18</div>
+                        <div class="month">December</div>
+                    </div>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt" style="color: #ffbc3b;"></i> F-6, Islamabad
+                    </div>
+                    <h3><a href="photography-event.html">Capture the Moments: A Photography Workshop</a></h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="event-2.jpg" alt="Programming Event">
+                    <div class="event-date">
+                        <div class="day">25</div>
+                        <div class="month">December</div>
+                    </div>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt" style="color: #ffbc3b;"></i> G-11, Islamabad
+                    </div>
+                    <h3><a href="programming-event.html">Code & Create: A Programming Bootcamp</a></h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="event-3.jpg" alt="Lifestyle Archives Event">
+                    <div class="event-date">
+                        <div class="day">30</div>
+                        <div class="month">December</div>
+                    </div>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt" style="color: #ffbc3b;"></i> F-10, Islamabad
+                    </div>
+                    <h3><a href="lifestyle-archives-event.html">Wellness & Lifestyle: The Ultimate Seminar</a></h3>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="registerPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="registerName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="color: white;">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="background-section d-flex justify-content-center align-items-start">
+        <div class="logo-background"></div> 
+        <img src="logo.png" alt="Logo" class="logo" id="logo">
+        <div class="mission-section">
+            <h2>Your bright future is <br> our mission</h2>
+            <p>At "Educenter", we are committed to helping you achieve a brighter future. Our mission is to provide the support and resources you need to succeed and grow. Join us in shaping your path to success.</p>
+            <a href="#apply" class="apply-button">Apply Now</a>
+        </div>
+    </section>
+    
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="active"><a href="Home.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Courses.html">COURSES</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li class="dropdown">
+                <a href="#" id="pagesDropdown">PAGES <span>&gt;</span></a>
+                <ul class="dropdown-menu" id="pagesMenu">
+                    <li><a href="#">Teacher</a></li>
+                    <li><a href="#">Teacher Single</a></li>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Notice Details</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Scholarship</a></li>
+                    <li><a href="#">Course Details</a></li>
+                    <li><a href="#">Event Details</a></li>
+                    <li><a href="#">Blog Details</a></li>
+                    <li class="sub-menu-item">
+                        <a href="#">Sub Menu <span>&gt;</span></a>
+                        <ul class="dropdown-menu sub-menu" id="subMenu">
+                            <li><a href="#">Sub Menu 01</a></li>
+                            <li><a href="#">Sub Menu 02</a></li>
+                            <li><a href="#">Sub Menu 03</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="custom-section">
+        <div class="container mt-5">
+            <div class="row custom-row-border">
+                <div class="col-md-4 custom-col-border">
+                    <img src="banner-feature.png" alt="Picture" style="width: 110%; height: auto; margin-left: -48px; margin-top: 4px;">
+                </div>
+                <div class="col-md-4 custom-col-border">
+                    <div class="icon" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 10px;">
+                        <i class="fas fa-graduation-cap" style="font-size: 60px; color: #ffbc3b; margin-bottom: 10px;"></i>
+                        <h3>Scholarship News</h3>
+                    </div>
+                    <p>Get the latest updates on available scholarships and how you can apply to get financial aid for your studies.</p>
+                    <div class="icon" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 10px;">
+                        <i class="fas fa-file-alt" style="font-size: 60px; color: #ffbc3b; margin-bottom: 10px;"></i>
+                        <h3>Admission Now</h3>
+                    </div>
+                    <p>Learn about our admission process, including important dates and required documents for applying.</p>
+                </div>
+                <div class="col-md-4 custom-col-border">
+                    <div class="icon" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 10px;">
+                        <i class="fas fa-trophy" style="font-size: 60px; color: #ffbc3b; margin-bottom: 10px;"></i>
+                        <h3>Our Achievements</h3>
+                    </div>
+                    <p>Discover the achievements & awards our institution has earned through the dedication of our students.</p>
+                    <div class="icon" style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 10px;">
+                        <i class="fas fa-bell" style="font-size: 60px; color: #ffbc3b; margin-bottom: 10px;"></i>
+                        <h3>Our Notice Board</h3>
+                    </div>
+                    <p>Stay updated with important notices and announcements about events and other essential information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-edu-section">
+        <div class="container mt-5">
+            <div class="row about-edu-row-border">
+                <!-- First Column: About Educenter -->
+                <div class="col-md-6 about-edu-col-border">
+                    <h3>About Educenter</h3>
+                    <p>
+                        Educenter is a premier educational institution dedicated to providing quality education and fostering a passion for learning. Established with the aim of offering comprehensive and innovative educational programs, Educenter is committed to nurturing the intellectual and personal growth of its students. Our curriculum is designed to challenge and engage students, preparing them for success in their academic and professional careers. <br><br> We offer a range of programs, including undergraduate and graduate degrees, vocational training, and continuing education courses.
+                    </p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+                <!-- Second Column: Picture -->
+                <div class="col-md-6 about-edu-col-border">
+                    <img src="about-us.jpg" alt="Educenter Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container courses-section">
+        <div class="section-title">
+            <h2>Our Course</h2>
+            <button class="btn btn-see-all">See All</button>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-1.jpg" alt="Photography Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>July 2024</span>
+                    </div>
+                    <h3><a href="photography.html">Photography</a></h3>
+                    <p>Explore the art of capturing moments and telling stories through photography.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-2.jpg" alt="Programming Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>August 2024</span>
+                    </div>
+                    <h3><a href="programming.html">Programming</a></h3>
+                    <p>Learn the fundamentals of coding and software development in various programming languages.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-3.jpg" alt="Lifestyle Archives Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>September 2024</span>
+                    </div>
+                    <h3><a href="lifestyle.html">Lifestyle Archives</a></h3>
+                    <p>Delve into the archives of lifestyle trends and their impact on society.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-4.jpg" alt="Complete Freelancing Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>October 2024</span>
+                    </div>
+                    <h3><a href="freelancing.html">Complete Freelancing</a></h3>
+                    <p>Master the skills needed to succeed in the freelancing, from find clients to manage projects.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-5.jpg" alt="Branding Design Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>November 2024</span>
+                    </div>
+                    <h3><a href="branding.html">Branding Design</a></h3>
+                    <p>Learn to create impactful branding and design that resonates with target audiences.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <img src="course-6.jpg" alt="Art Design Image">
+                    <div class="course-date">
+                        <i class="fas fa-calendar-alt" style="color: gray; font-size: 20px; margin-right: 10px; margin-top: -5px;"></i>
+                        <span>December 2024</span>
+                    </div>
+                    <h3><a href="artdesign.html">Art Design</a></h3>
+                    <p>Explore various art design techniques and their applications in modern aesthetics.</p>
+                    <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="training-section">
+        <p class="small-text">Click to Join the Advance Workshop</p>
+        <h2 class="heading">Training In Advance Networking</h2>
+        <a href="#" class="btn btn-primary mt-3">Join Now</a>
+    </section>
+    <section class="success-stories">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-icon" target="_blank">
+            <i class="fa fa-play-circle"></i>
+        </a>
+        <div class="white-layer">
+            <div class="content">
+                <h1>Success Stories</h1>
+                <p>"Jane Doe, a mid-level IT professional, transformed her career through our advanced networking workshop. Before joining, Jane was eager to advance but needed strategic insights and professional connections. The workshop provided her with both, offering practical skills and networking opportunities with industry leaders. <br><br> Soon after completing the program, Jane secured a senior position at a top tech company. Her enhanced networking skills and industry knowledge were key factors in her success. She says, 'The workshop gave me the tools and connections I needed to advance my career significantly. It was a pivotal step in reaching my professional goals.' Jane’s story highlights the impactful results of our training and its role in propelling careers forward."</p>
+            </div>
+        </div>
+    </section>
+    <body>
+        <section class="events">
+            <div class="container events-section">
+                <div class="section-title">
+                    <h2>Upcoming Events</h2>
+                    <button class="btn btn-see-all">See All</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <img src="event-1.jpg" alt="Photography Event">
+                            <div class="event-date">
+                                <div class="day">18</div>
+                                <div class="month">December</div>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt" style="color: #ffbc3b;"></i> F-6, Islamabad
+                            </div>
+                            <h3><a href="photography-event.html">Capture the Moments: A Photography Workshop</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <img src="event-2.jpg" alt="Programming Event">
+                            <div class="event-date">
+                                <div class="day">25</div>
+                                <div class="month">December</div>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt" style="color: #ffbc3b;"></i> G-11, Islamabad
+                            </div>
+                            <h3><a href="programming-event.html">Code & Create: A Programming Bootcamp</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <img src="event-3.jpg" alt="Lifestyle Archives Event">
+                            <div class="event-date">
+                                <div class="day">30</div>
+                                <div class="month">December</div>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt" style="color: #ffbc3b;"></i> F-10, Islamabad
+                            </div>
+                            <h3><a href="lifestyle-archives-event.html">Wellness & Lifestyle: The Ultimate Seminar</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teachers">
+            <div class="container teachers-section">
+                <div class="section2-title">
+                    <h1>Our Teachers</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="teacher-card">
+                            <img src="teacher-1.jpg" alt="Teacher 1">
+                            <h3><a href="teacher-1.html">John Doe</a></h3>
+                            <div class="teacher-location">
+                                Teacher
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="teacher-card">
+                            <img src="teacher-2.jpg" alt="Teacher 2">
+                            <h3><a href="teacher-2.html">Jane Smith</a></h3>
+                            <div class="teacher-location">
+                                Teacher
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="teacher-card">
+                            <img src="teacher-3.jpg" alt="Teacher 3">
+                            <h3><a href="teacher-3.html">Clark Malik</a></h3>
+                            <div class="teacher-location">
+                                Teacher
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    
+        <section class="news">
+            <div class="container news-section">
+                <div class="section3-title">
+                    <h1>Latest News</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <img src="post-1.jpg" alt="News 1">
+                            <h3><a href="news-1.html">Breaking News Headline</a></h3>
+                            <div class="news-summary">
+                                Short summary of the news article.
+                            </div>
+                            <a href="news-1.html" class="learn-more-button">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <img src="post-2.jpg" alt="News 2">
+                            <h3><a href="news-2.html">Important Update on Recent Events</a></h3>
+                            <div class="news-summary">
+                                Brief description of the news article.
+                            </div>
+                            <a href="news-2.html" class="learn-more-button">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <img src="post-3.jpg" alt="News 3">
+                            <h3><a href="news-3.html">Highlights from Today's News</a></h3>
+                            <div class="news-summary">
+                                Quick overview of the news article.
+                            </div>
+                            <a href="news-3.html" class="learn-more-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    <br><br><br><br><br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3">
+                        <img src="logo.png" alt="Website Logo" class="logo">
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="col-md-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="col-md-3 contact-info">
+                        <h5>Contact Info</h5>
+                        <p>1234 Street Name<br>City, State, 56789<br>Email: info@example.com<br>Phone: (123) 456-7890</p>
+                    </div>
+                    <!-- Subscribe -->
+                    <div class="col-md-3">
+                        <h5>Subscribe</h5>
+                        <div class="subscribe-form d-flex">
+                            <input type="email" placeholder="Your Email">
+                            <button type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your Website. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('scroll', function() {
+            var logoBackground = document.querySelector('.logo-background');
+            var scrollPosition = window.scrollY || window.pageYOffset;
+
+            if (scrollPosition > 100) {
+                logoBackground.classList.add('show');
+            } else {
+                logoBackground.classList.remove('show');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var pagesDropdown = document.getElementById('pagesDropdown');
+            var pagesMenu = document.getElementById('pagesMenu');
+            var subMenu = document.getElementById('subMenu');
+            
+            pagesDropdown.addEventListener('mouseover', function() {
+                pagesMenu.classList.add('show');
+            });
+
+            pagesDropdown.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!pagesMenu.contains(relatedTarget) && relatedTarget !== pagesDropdown) {
+                    pagesMenu.classList.remove('show');
+                }
+            });
+            
+            pagesMenu.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!pagesDropdown.contains(relatedTarget) && !pagesMenu.contains(relatedTarget)) {
+                    pagesMenu.classList.remove('show');
+                }
+            });
+
+            var subMenuItem = document.querySelector('.sub-menu-item');
+            subMenuItem.addEventListener('mouseover', function() {
+                subMenu.classList.add('show');
+            });
+
+            subMenuItem.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!subMenu.contains(relatedTarget) && relatedTarget !== subMenuItem) {
+                    subMenu.classList.remove('show');
+                }
+            });
+
+            subMenu.addEventListener('mouseover', function() {
+                subMenu.classList.add('show');
+            });
+
+            subMenu.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!subMenuItem.contains(relatedTarget) && !subMenu.contains(relatedTarget)) {
+                    subMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+
+    <header class="header d-flex justify-content-between align-items-center">
+        <a href="https://wa.me/443003030266" class="phone">CALL +44 300 303 0266</a>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-dark"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com" target="_blank" class="text-dark"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <div class="header-buttons">
+            <a href="#notice">Notice</a>
+            <a href="#research">Research</a>
+            <a href="#scholarship">SCHOLARSHIP</a>
+            <a href="#" class="btn-popup" data-toggle="modal" data-target="#loginModal">Login</a>
+            <a href="#" class="btn-popup" data-toggle="modal" data-target="#registerModal">Register</a>
+        </div>
+    </header>
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="phone" class="form-control" id="loginPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="color: white;">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="registerPhone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="registerName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="color: white;">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="background-section d-flex justify-content-center align-items-start">
+        <div class="logo-background"></div> 
+        <img src="logo.png" alt="Logo" class="logo" id="logo">
+    </section>
+    <section class="info-section d-flex flex-column align-items-center">
+        <div class="info-text">
+            <div class="info-heading-button-wrapper">
+                <a href="Home.html" class="info-button">
+                    <span>Home</span><span class="button-symbol">&gt;</span>
+                    <span class="info-heading">About Us</span>
+                </a>
+            </div>
+            <p class="info-paragraph">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+        </div>
+    </section>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="Home.html">HOME</a></li>
+            <li class="active"><a href="About.html">ABOUT</a></li>
+            <li><a href="Courses.html">COURSES</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li class="dropdown">
+                <a href="#" id="pagesDropdown">PAGES <span>&gt;</span></a>
+                <ul class="dropdown-menu" id="pagesMenu">
+                    <li><a href="#">Teacher</a></li>
+                    <li><a href="#">Teacher Single</a></li>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Notice Details</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Scholarship</a></li>
+                    <li><a href="#">Course Details</a></li>
+                    <li><a href="#">Event Details</a></li>
+                    <li><a href="#">Blog Details</a></li>
+                    <li class="sub-menu-item">
+                        <a href="#">Sub Menu <span>&gt;</span></a>
+                        <ul class="dropdown-menu sub-menu" id="subMenu">
+                            <li><a href="#">Sub Menu 01</a></li>
+                            <li><a href="#">Sub Menu 02</a></li>
+                            <li><a href="#">Sub Menu 03</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="journey">
+        <div class="journey-container">
+          <img src="about-page.jpg" alt="Journey Image" class="journey-image">
+          <h2 class="journey-title">ABOUT OUR JOURNEY</h2>
+          <p class="journey-description">
+            Our journey began with a single spark of ambition, igniting a quest that would take us across diverse landscapes and through countless adventures. From the bustling streets of vibrant cities to the serene beauty of remote natural wonders, every step has been a testament to our resilience and passion. We traversed rugged terrains, climbed towering peaks, and explored hidden valleys, each experience enriching our story and shaping our destiny. Along the way, we encountered inspiring people whose stories and wisdom left an indelible mark on our hearts. Our journey was not just about reaching new destinations but about the transformative experiences that unfolded with every mile traveled. We learned to embrace the unknown, find joy in the smallest moments, and grow from every challenge faced. As we reflect on our path, we see a tapestry woven with unforgettable memories and achievements, each thread contributing to the grand narrative of our adventure. <br><br>This journey has been more than a physical traverse; it has been a profound exploration of the self, a celebration of dreams, and a relentless pursuit of excellence
+          </p>
+        </div>
+      </section>
+    
+    <section class="training-section">
+        <div>
+            <div class="training-item" id="teachers">0</div>
+            <div class="training-text">TEACHERS</div>
+        </div>
+        <div>
+            <div class="training-item" id="courses">0</div>
+            <div class="training-text">COURSES</div>
+        </div>
+        <div>
+            <div class="training-item" id="students">0</div>
+            <div class="training-text">STUDENTS</div>
+        </div>
+        <div>
+            <div class="training-item" id="clients">0</div>
+            <div class="training-text">CLIENTS</div>
+        </div>
+    </section>
+    <section class="success-stories">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-icon" target="_blank">
+            <i class="fa fa-play-circle"></i>
+        </a>
+        <div class="white-layer">
+            <div class="content">
+                <h1>Success Stories</h1>
+                <p>"Jane Doe, a mid-level IT professional, transformed her career through our advanced networking workshop. Before joining, Jane was eager to advance but needed strategic insights and professional connections. The workshop provided her with both, offering practical skills and networking opportunities with industry leaders. <br><br> Soon after completing the program, Jane secured a senior position at a top tech company. Her enhanced networking skills and industry knowledge were key factors in her success. She says, 'The workshop gave me the tools and connections I needed to advance my career significantly. It was a pivotal step in reaching my professional goals.' Jane’s story highlights the impactful results of our training and its role in propelling careers forward."</p>
+            </div>
+        </div>
+    </section>
+    <section class="teachers">
+        <div class="container teachers-section">
+            <div class="section-title">
+                <h1>Our Teachers</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="teacher-card">
+                        <img src="teacher-1.jpg" alt="Teacher 1">
+                        <h3><a href="teacher-1.html">John Doe</a></h3>
+                        <div class="teacher-location">
+                            Teacher
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="teacher-card">
+                        <img src="teacher-2.jpg" alt="Teacher 2">
+                        <h3><a href="teacher-2.html">Jane Smith</a></h3>
+                        <div class="teacher-location">
+                            Teacher
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="teacher-card">
+                        <img src="teacher-3.jpg" alt="Teacher 3">
+                        <h3><a href="teacher-3.html">Clark Malik</a></h3>
+                        <div class="teacher-location">
+                            Teacher
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col-md-3">
+                    <img src="logo.png" alt="Website Logo" class="logo">
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-3 contact-info">
+                    <h5>Contact Info</h5>
+                    <p>1234 Street Name<br>City, State, 56789<br>Email: info@example.com<br>Phone: (123) 456-7890</p>
+                </div>
+                <!-- Subscribe -->
+                <div class="col-md-3">
+                    <h5>Subscribe</h5>
+                    <div class="subscribe-form d-flex">
+                        <input type="email" placeholder="Your Email">
+                        <button type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Your Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to animate the counting effect -->
+    <script>
+        function countUp(id, endValue, duration) {
+            let element = document.getElementById(id);
+            let startValue = 0;
+            let startTime = Date.now();
+            let endTime = startTime + duration;
+            
+            function update() {
+                let now = Date.now();
+                let elapsed = now - startTime;
+                let progress = Math.min(elapsed / duration, 1);
+                let value = Math.floor(progress * endValue);
+                element.textContent = value;
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            
+            update();
+        }
+
+        window.onload = function() {
+            countUp('teachers', 60, 1000);
+            countUp('courses', 50, 1000);
+            countUp('students', 1000, 1000);
+            countUp('clients', 3737, 2000);
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('scroll', function() {
+            var logoBackground = document.querySelector('.logo-background');
+            var scrollPosition = window.scrollY || window.pageYOffset;
+
+            if (scrollPosition > 100) {
+                logoBackground.classList.add('show');
+            } else {
+                logoBackground.classList.remove('show');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var pagesDropdown = document.getElementById('pagesDropdown');
+            var pagesMenu = document.getElementById('pagesMenu');
+            var subMenu = document.getElementById('subMenu');
+            
+            pagesDropdown.addEventListener('mouseover', function() {
+                pagesMenu.classList.add('show');
+            });
+
+            pagesDropdown.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!pagesMenu.contains(relatedTarget) && relatedTarget !== pagesDropdown) {
+                    pagesMenu.classList.remove('show');
+                }
+            });
+
+
+            pagesMenu.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!pagesDropdown.contains(relatedTarget) && !pagesMenu.contains(relatedTarget)) {
+                    pagesMenu.classList.remove('show');
+                }
+            });
+
+            var subMenuItem = document.querySelector('.sub-menu-item');
+            subMenuItem.addEventListener('mouseover', function() {
+                subMenu.classList.add('show');
+            });
+
+            subMenuItem.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!subMenu.contains(relatedTarget) && relatedTarget !== subMenuItem) {
+                    subMenu.classList.remove('show');
+                }
+            });
+
+            subMenu.addEventListener('mouseover', function() {
+                subMenu.classList.add('show');
+            });
+
+            subMenu.addEventListener('mouseleave', function(event) {
+                var relatedTarget = event.relatedTarget;
+                if (!subMenuItem.contains(relatedTarget) && !subMenu.contains(relatedTarget)) {
+                    subMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

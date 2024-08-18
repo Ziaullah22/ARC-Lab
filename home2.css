@@ -1,0 +1,254 @@
+.teachers {
+    font-family: sans-serif;
+    margin-top: 100px;
+  }
+  .teachers-section {
+    padding: 20px;
+    max-width: 1550px;
+  }
+  .section2-title {
+    margin-bottom: 40px;
+  }
+  .section2-title h1 {
+    font-size: 46px;
+    color: #0a0457;
+    font-weight: 800;
+  }
+  .teacher-card {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .teacher-card img {
+    width: 100%;
+    height: auto;
+  }
+  .teacher-card h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: black;
+  }
+  .teacher-card h3 a {
+    text-decoration: none;
+    color: #0a0457;
+    font-weight: bold;
+  }
+  .teacher-card h3 a:hover {
+    color: #ffbc3b;
+  }
+  .teacher-location {
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .teacher-location .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .teacher-location .social-icons a {
+    color: gray; 
+    font-size: 20px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  .teacher-location .social-icons a:hover {
+    color: #ffbc3b;
+  }
+  .teachers-section .row {
+    margin: 0;
+  }
+  .teacher-card:hover {
+    box-shadow: 0 8px 8px rgba(97, 85, 85, 0.897);
+  }
+
+  @media (max-width: 992px) {
+    .teacher-card {
+      padding: 15px;
+      margin: 10px 0;
+      height: auto;
+    }
+    .teacher-card h3 {
+      font-size: 24px;
+    }
+    .teacher-location {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    .teachers-section .section2-title h1 {
+      font-size: 36px;
+    }
+    .teacher-card {
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .teacher-card h3 {
+      font-size: 20px;
+    }
+    .teacher-location {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .teachers-section{
+      margin-top: -60px;
+    }
+    .teacher-card {
+      padding: 5px;
+      margin: 5px 0;
+    }
+    .teacher-card h3 {
+      font-size: 18px;
+    }
+    .teacher-location {
+      font-size: 12px;
+    }
+  }
+  .news {
+    font-family: sans-serif;
+    margin-top: 40px;
+  }
+  .news-section {
+    padding: 20px;
+    max-width: 1550px;
+  }
+  .news-section .section3-title {
+    margin-bottom: 40px;
+  }
+  .news-section .section3-title h1 {
+    font-size: 46px;
+    color: #0a0457;
+    font-weight: 800;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-card {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .news-card img {
+    width: 100%;
+    height: auto;
+  }
+  .news-card h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: black;
+  }
+  .news-card h3 a {
+    text-decoration: none;
+    color: #0a0457;
+    font-weight: bold;
+  }
+  .news-card h3 a:hover {
+    color: #ffbc3b;
+  }
+  .news-summary {
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .news-summary .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .news-summary .social-icons a {
+    color: gray;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  .news-summary .social-icons a:hover {
+    color: #ffbc3b;
+  }
+  .news-card:hover {
+    box-shadow: 0 8px 8px rgba(97, 85, 85, 0.897);
+  }
+  .learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffbc3b;
+    color: #ffbc3b;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+  }
+  .learn-more-button:hover {
+    background-color: #ffbc3b;
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (max-width: 992px) {
+    .news-card {
+      padding: 15px;
+      margin: 10px 0;
+    }
+    .news-card h3 {
+      font-size: 24px;
+    }
+    .news-summary {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    .news-section .section3-title h1 {
+      font-size: 36px;
+    }
+    .news-card {
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .news-card h3 {
+      font-size: 20px;
+    }
+    .news-summary {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .news-section {
+      margin-top: -60px;
+    }
+    .news-card {
+      padding: 5px;
+      margin: 5px 0;
+    }
+    .news-card h3 {
+      font-size: 18px;
+    }
+    .news-summary {
+      font-size: 12px;
+    }
+  }
